@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".Account">
+
+    <EditText
+        android:id="@+id/loginEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/loginPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
+
+    <ImageButton
+        android:id="@+id/userImgRegBtn"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="111dp"
+        android:layout_height="119dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/compRegImgBtn"
+        app:layout_constraintEnd_toStartOf="@+id/compRegImgBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/compRegImgBtn"
+        tools:src="@drawable/user" />
+
+    <ImageButton
+        android:id="@+id/compRegImgBtn"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="111dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/company2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/volRegImgBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/userImgRegBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:src="@drawable/company2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/compRegImgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_round"
+        android:backgroundTint="@color/colorPrimary"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <ImageButton
+        android:id="@+id/volRegImgBtn"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="111dp"
+        android:layout_height="119dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/volunteer2"
+
+        app:layout_constraintBottom_toBottomOf="@+id/compRegImgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/compRegImgBtn"
+        app:layout_constraintTop_toTopOf="@+id/compRegImgBtn"
+        tools:src="@drawable/volunteer2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/userImgRegBtn"
+        app:layout_constraintStart_toStartOf="@+id/userImgRegBtn"
+        app:layout_constraintTop_toBottomOf="@+id/userImgRegBtn" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Agency"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/compRegImgBtn"
+        app:layout_constraintStart_toStartOf="@+id/compRegImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/compRegImgBtn" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volunteer"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/volRegImgBtn"
+        app:layout_constraintStart_toStartOf="@+id/volRegImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/volRegImgBtn" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="265dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logoneww"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/loginEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

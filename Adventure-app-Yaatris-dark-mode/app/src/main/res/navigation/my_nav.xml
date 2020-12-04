@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/explore_Homepage">
+    <fragment
+        android:id="@+id/explore_Homepage"
+        android:name="com.example.yaatris.Explore_Homepage"
+        android:label="fragment_explore__homepage"
+        tools:layout="@layout/fragment_explore__homepage" />
+    <fragment
+        android:id="@+id/adventures"
+        android:name="com.example.yaatris.Adventures"
+        android:label="fragment_adventures"
+        tools:layout="@layout/fragment_adventures" />
+    <fragment
+        android:id="@+id/volunteers"
+        android:name="com.example.yaatris.Volunteers"
+        android:label="fragment_volunteers"
+        tools:layout="@layout/fragment_volunteers" />
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.yaatris.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>

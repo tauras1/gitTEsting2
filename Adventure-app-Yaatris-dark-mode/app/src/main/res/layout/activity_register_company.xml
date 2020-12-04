@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/moode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".RegisterCompany">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Register your Company"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/companyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="102dp"
+        android:ems="10"
+        android:hint="Company Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/companyEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/companyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/companyPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+    <EditText
+        android:id="@+id/companyPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/companyAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyEmail" />
+
+    <EditText
+        android:id="@+id/companyPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/companyPasswordConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyAddress" />
+
+    <EditText
+        android:id="@+id/companyPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/backgroundTint"
+
+        android:textColor="@color/textColor"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegCompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyPassword" />
+
+    <EditText
+        android:id="@+id/companyAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:textColor="@color/textColor"
+        android:backgroundTint="@color/backgroundTint"
+        android:textColorHighlight="@color/textColorHighlight"
+        android:textColorHint="@color/textColorHint"
+        android:textColorLink="@color/textColorLink"
+        app:layout_constraintBottom_toTopOf="@+id/companyPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyPhone" />
+
+    <Button
+        android:id="@+id/buttonRegCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:background="@color/colorPrimary"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyPasswordConfirm" />
+
+    <Button
+        android:id="@+id/btnToggleDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

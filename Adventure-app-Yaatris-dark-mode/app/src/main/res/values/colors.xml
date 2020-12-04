@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A73BD</color>
+    <color name="colorPrimaryDark">#3C3E3E</color>
+    <color name="colorAccent">#070707</color>
+
+    <color name="backgroundColor">#ffffff</color>
+    <color name="textColor">#000000</color>
+
+    <color name="textColorHighlight">#FFFFFF</color>
+    <color name="textColorHint">#A9262929</color>
+    <color name="textColorLink">#E80B0A0A</color>
+
+
+    <color name="backgroundTint">#E8050505</color>
+
+    <color name="Bnb">#fff</color>
+
+
+
+
+</resources>
